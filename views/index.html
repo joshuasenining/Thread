@@ -1,0 +1,221 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>A Message Thread</title>
+    <meta name="description" content="A message thread made on Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <!-- Block: Thread -->
+    <!-- No semantic tags for a convo: http://w3c.github.io/html/common-idioms-without-dedicated-elements.html#conversations -->
+    <div class="thread">
+    
+      <!-- Block: Message -->
+      <div class="thread__message message">
+
+        <img class="message__avatar" src="//placekitten.com/50/50">
+
+        <!-- Message body -->
+        <div class="message__body">
+
+          <div class="message__meta">
+            <em class="message__author">Tatiana Figueiredo</em> 
+            <time datetime="2018-04-18T15:00-08:00" class="message__timestamp">5h ago</time>
+          </div>
+
+          <p class="message__text">
+            Nam quis lorem et est hendrerit posuere. Proin viverra, ex vel eleifend lacinia, dui nunc semper justo, id bibendum velit arcu at ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eleifend erat nec tincidunt vulputate. Quisque quis urna at felis tempus ultrices. Sed laoreet justo orci, a dictum dolor sodales ut.
+          </p>
+          
+          <!-- Message reactions -->
+          <ul class="message__reactions">
+
+            <li class="message__reaction clap">👏 <span class="message__reaction__tally">10</span></li>
+            <li class="message__reaction heart">💙 <span class="message__reaction__tally"></span></li>
+            <li class="message__reaction question">❓ <span class="message__reaction__tally"></span></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Block: Reaction menu -->
+        <div class="message__menu reactions">
+          
+          <div class="reactions__menu">
+            
+            <button class="reactions__button clap">👏</button>
+            <button class="reactions__button heart">💙</button>
+            <button class="reactions__button question">❓</button>
+            
+          </div>
+          
+          <button class="reactions__menu-launcher">
+            + 👏
+          </button>
+          
+        </div>
+
+      </div>
+      <!-- / Block: Message -->
+      
+      <!-- Block: Message -->
+      <div class="thread__message message">
+
+        <img class="message__avatar" src="//placekitten.com/50/50">
+
+        <!-- Message body -->
+        <div class="message__body">
+
+          <div class="message__meta">
+            <em class="message__author">Lauren Cole</em> 
+            <time datetime="2018-04-18T15:00-08:00" class="message__timestamp">3h ago</time>
+          </div>
+
+          <p class="message__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dui ante. Ut vitae ligula condimentum lectus eleifend interdum id id lectus. Donec iaculis hendrerit mauris in efficitur.
+          </p>
+          
+          <!-- Message reactions -->
+          <ul class="message__reactions">
+
+            <li class="message__reaction clap">👏 <span class="message__reaction__tally"></span></li>
+            <li class="message__reaction heart">💙 <span class="message__reaction__tally"></span></li>
+            <li class="message__reaction question">❓ <span class="message__reaction__tally"></span></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Block: Reactions menu -->
+        <div class="message__menu reactions">
+          
+          <button class="reactions__menu-launcher">+ 👏</button>
+          
+          <div class="reactions__menu">
+            
+            <button class="reactions__button clap">👏</button>
+            <button class="reactions__button heart">💙</button>
+            <button class="reactions__button question">❓</button>
+            
+          </div>
+          
+        </div>
+
+      </div>
+      <!-- / Block: Message -->
+      
+      <!-- Block: Message -->
+      <div class="thread__message message">
+
+        <img class="message__avatar" src="//placekitten.com/50/50">
+
+        <!-- Message body -->
+        <div class="message__body">
+
+          <div class="message__meta">
+            <em class="message__author">Sasha Alex Raskin</em> 
+            <time datetime="2018-04-18T15:00-08:00" class="message__timestamp">2h ago</time>
+          </div>
+
+          <p class="message__text">
+            Proin eu fringilla diam, at mollis sapien. Proin sapien ante, tincidunt sed nulla tincidunt, blandit efficitur sem. Donec tincidunt luctus maximus. Nulla at nunc turpis.
+          </p>
+          
+          <!-- Message reactions -->
+          <ul class="message__reactions">
+
+            <li class="message__reaction clap">👏 <span class="message__reaction__tally">3</span></li>
+            <li class="message__reaction heart">💙 <span class="message__reaction__tally"></span></li>
+            <li class="message__reaction question">❓ <span class="message__reaction__tally"></span></li>
+
+          </ul>
+
+        </div>
+        
+        <!-- Block: Reaction menu -->
+        <div class="message__menu reactions">
+          
+          <button class="reactions__menu-launcher">+ 👏</button>
+          
+          <div class="reactions__menu">
+            
+            <button class="reactions__button clap">👏</button>
+            <button class="reactions__button heart">💙</button>
+            <button class="reactions__button question">❓</button>
+            
+          </div>
+          
+        </div>
+
+
+      </div>
+      <!-- / Block: Message -->
+      
+      <!-- Block: Message -->
+      <div class="thread__message message">
+
+        <img class="message__avatar" src="//placekitten.com/50/50">
+
+        <!-- Message body -->
+        <div class="message__body">
+
+          <div class="message__meta">
+            <em class="message__author">Ridhi Kantelal</em> 
+            <time datetime="2018-04-18T15:00-08:00" class="message__timestamp">1h ago</time>
+          </div>
+
+          <p class="message__text">
+            Etiam ligula nulla, aliquam in malesuada nec, eleifend eget massa.
+          </p>
+          
+          <!-- Message reactions -->
+          <ul class="message__reactions">
+
+            <li class="message__reaction clap">👏 <span class="message__reaction__tally"></span></li>
+            <li class="message__reaction heart">💙 <span class="message__reaction__tally">5</span></li>
+            <li class="message__reaction--selected question">❓ <span class="message__reaction__tally">3</span></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- / Block: Message -->
+      
+    </div>
+    <!-- / Block: Thread -->
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
