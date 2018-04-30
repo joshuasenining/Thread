@@ -6,14 +6,10 @@ var express = require('express');
 var app = express();
 var sassMiddleware = require("node-sass-middleware");
 
-// set up Sass
 app.use(sassMiddleware({
   src: __dirname + '/public',
   dest: '/tmp'
 }));
-
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
